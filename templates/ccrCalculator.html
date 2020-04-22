@@ -1,0 +1,136 @@
+<h1 style="margin-left: 10px;"><i>CCR Calculator</i></h1>
+<h6 style="margin-left: 10px;"><i>Disclaimer: not to be used for design purposes</i></h6><br>
+
+<form action="/" method="POST" enctype="multipart/form-data">
+    <table class="form-inline">
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Lamp Rating (w):</label><input type="text" class="form-control form-control-sm"
+                                                          style="width:50px;" name="lr1"
+                                                          id="lr1" value="0">
+                </div>
+            </td>
+            <td>
+                <div class="form-inline">
+                    <label>Quantity:</label><input type="text" class="form-control form-control-sm"
+                                                          style="width:50px;" name="qty1"
+                                                          id="qty1" value="0">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Lamp Rating (w):</label><input type="text" class="form-control form-control-sm"
+                                                          style="width:50px;" name="lr2"
+                                                          id="lr2" value="0">
+                </div>
+            </td>
+            <td>
+                <div class="form-inline">
+                    <label>Quantity:</label><input type="text" class="form-control form-control-sm"
+                                                          style="width:50px;" name="qty2"
+                                                          id="qty2" value="0">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Lamp Rating (w):</label><input type="text" class="form-control form-control-sm"
+                                                          style="width:50px;" name="lr3"
+                                                          id="lr3" value="0">
+                </div>
+            </td>
+            <td>
+                <div class="form-inline">
+                    <label>Quantity:</label><input type="text" class="form-control form-control-sm"
+                                                          style="width:50px;" name="qty3"
+                                                          id="qty3" value="0">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Total Primary Length (m):</label><input type="text" class="form-control form-control-sm"
+                                                                   style="width:50px;" name="tplBox"
+                                                                   id="tplBox">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Total Secondary Length (m):</label><input type="text" class="form-control form-control-sm"
+                                                                     style="width:50px;" name="tslBox"
+                                                                     id="tslBox">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Current (A):</label><select class="custom-select custom-select-sm" style="width:200px;"
+                                                       name="currentDrop" id="currentDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="6.6">6.6</option>
+                    <option value="12">12</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Cable Type:</label><select class="custom-select custom-select-sm" style="width:200px;"
+                                                      name="cableDrop" id="cableDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="Copper">Copper</option>
+                    <option value="Aluminium">Aluminium</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Primary Cable Size (mm2)</label><select class="custom-select custom-select-sm"
+                                                                   style="width:200px;"
+                                                                   name="primarySizeDrop" id="primarySizeDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Secondary Cable Size (mm2)</label><select class="custom-select custom-select-sm"
+                                                                     style="width:200px;"
+                                                                     name="secondarySizeDrop" id="secondarySizeDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="2.5">2.5</option>
+                    <option value="4">4</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="form-inline">
+        <Button class="btn btn-primary btn-sm" type="submit" formaction="/calculate_ccr" style="margin-top: 10px;">
+            Calculate
+        </Button>
+        <Button class="btn btn-danger btn-sm" type="reset" formaction="" style="margin-top: 10px; margin-left: 10px;">
+            Reset
+        </Button>
+    </div>
+</form>
+
+<!-- INSERT JAVASCRIPT BELOW -->
+<script type="text/javascript">
+
+</script>
